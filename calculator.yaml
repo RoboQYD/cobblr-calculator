@@ -1,0 +1,41 @@
+application: calculator
+Init: True
+Process: True
+Thread: False
+screen-size: [240, 320]
+icon-size: [40, 40]
+screen-modes:
+  1:
+    # Row 1
+    1: [1.5, 3]
+    2: [2.75, 3]
+    3: [4, 3]
+   
+    # Row 2
+    4: [1.5, 4]
+    5: [2.75, 4]
+    6: [4, 4]
+    
+    # Row 3
+    7: [1.5, 5]
+    8: [2.75, 5]
+    9: [4, 5]
+    
+    # Row 4
+    point: [1.5, 6]
+    0: [2.75, 6]
+    alt: [4, 6]
+ 
+    # Row 5
+    right_parentheses: [1.5, 7]
+    left_parentheses: [2.75, 7]
+    delete: [4, 7]   
+    
+    # Column of Operators
+    plus: [5.5, 3]
+    minus: [5.5, 4]
+    multiply: [5.5, 5]
+    divide: [5.5, 6]
+    equals: [5.5, 7]
+    
+
