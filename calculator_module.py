@@ -1,13 +1,16 @@
 #!/usr/bin/python
-
+import signal
+from engine import Utilities
 from engine import TextWriter
+from engine import SystemState
 
-def Init(SystemState):
+signal.signal(signal.SIGINT, Utilities.GracefulExit)
+
+def Init():
   SystemState.pressed_buttons = ''
   SystemState.pressed_button = None
-  return SystemState
 
-def Process(SystemState):
+def Process():
   button = str(SystemState.pressed_button)
   pygame = SystemState.pygame
   screen = SystemState.screen
@@ -49,7 +52,3 @@ def Process(SystemState):
         text_type='top',
         color=(255, 0, 0)
     )
-
-  return SystemState
-
-
