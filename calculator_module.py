@@ -3,6 +3,7 @@ import signal
 from engine import Utilities
 from engine import TextWriter
 from engine import SystemState
+from engine import Menu
 
 signal.signal(signal.SIGINT, Utilities.GracefulExit)
 
@@ -15,6 +16,7 @@ def Process():
   pygame = SystemState.pygame
   screen = SystemState.screen
   screen_mode = SystemState.screen_mode
+  back_pressed = 0
 
   try:
     if button == 'delete':
@@ -37,18 +39,30 @@ def Process():
       SystemState.pressed_buttons = SystemState.pressed_buttons + ')'
     elif button == 'alt':
       print 'alt'
+    elif button == 'go_back':
+      back_pressed = 1
+      Menu.Back()
     else:
       SystemState.pressed_buttons = SystemState.pressed_buttons + str(button)
 
-    TextWriter.Write(
-        state=SystemState,
-        text=SystemState.pressed_buttons,
-        text_type='top'
-    )
+    if back_pressed == 0:
+       UpdateText(0)
   except:
+    if back_pressed == 0:
+       UpdateText(1)
+
+
+def UpdateText(status):
+  if status == 0:
     TextWriter.Write(
-        state=SystemState,
-        text="ERROR",
-        text_type='top',
-        color=(255, 0, 0)
+      state=SystemState,
+      text=SystemState.pressed_buttons,
+      text_type='top'
+    )
+  elif status == 1:
+    TextWriter.Write(
+      state=SystemState,
+      text="ERROR",
+      text_type='top',
+      color=(255, 0, 0)
     )
