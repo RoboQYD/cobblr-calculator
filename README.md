@@ -1,4 +1,4 @@
-![alt tag](://raw.githubusercontent.com/TheQYD/cobblr-calculator/master/calculator.png)
+![alt tag](https://raw.githubusercontent.com/TheQYD/cobblr-calculator/master/calculator.png) 
 
 **Description:** This is the calculator application written for the RPI's cobblr software.
 
