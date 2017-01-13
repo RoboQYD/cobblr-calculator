@@ -24,7 +24,7 @@ sudo cobblr install cobblr-calculator
 Though not required, I've made a polycarbonate and aluminum body for it. The CADs are avaliable [here](https://github.com/TheQYD/CAD/tree/master/cobblr-phone). Other applications were made to work with the cobblr-music:
 
 - [cobblr-phone](http://gihub.com/TheQYD/cobblr-phone)
-- [cobblr-calculator](http://gihub.com/TheQYD/cobblr-music)
+- [cobblr-music](http://gihub.com/TheQYD/cobblr-music)
 
 # License
 Cobblr Calculator is available under the MIT license. See the LICENSE file for more info. Make it better!
