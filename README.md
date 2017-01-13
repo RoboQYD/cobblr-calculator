@@ -1,22 +1,30 @@
-![alt tag](https://raw.githubusercontent.com/TheQYD/cobblr-calculator/master/calculator.png) 
+A calculator application written for the [Cobblr framework](http://github.com/TheQYD/cobblr).
 
-**Description:** This is the calculator application written for the RPI's cobblr software.
+![cobblr-calculator](https://raw.githubusercontent.com/TheQYD/cobblr/master/photos/cobblr_calculator.jpg)
 
-**Requirements**
- 1. Raspberry Pi (https://www.adafruit.com/products/2358)
- 2. Adafruit 2.8in PiTFT (https://www.adafruit.com/products/1601)
- 3. Raspberry Pi Camera (https://www.adafruit.com/products/1367)
- 4. USB Microphone Dongle (http://www.amazon.com/Super-Microphone-Adapter-Driver-Notebook/dp/B00M3UJ42A)
- 5. The cobblr software (https://github.com/RoboQYD/cobblr)
- 6. (Optional) Adafruit Powerboost 1000C (https://www.adafruit.com/products/2465)
- 7. (Optional) Adafruit Lipo Battery 500mAh (https://www.adafruit.com/products/1578)
+# Hardware
+Here's a list of hardware necessary to make the phone work:
 
-**Installation**
- 1. Clone the repository.
- 2. Enter the cobblr-calculator directory.
- 3. Run "setup.py install (path)" where (path) is the location of the cobblr folder.
- 4. Enter the cobblr/config directory.
- 5. Open "cobblr.yaml" and add "-calculator" to the list of applications.
- 6. Run cobblr.
+ - 1 [Raspberry Pi](https://www.adafruit.com/products/2358)
+ - 1 [Adafruit 2.8in PiTFT](https://www.adafruit.com/products/1601)
+ - 1 [(Optional) Adafruit Powerboost 1000C](https://www.adafruit.com/products/2465)
+ - 1 [(Optional) Adafruit Lipo Battery 2500mAh](https://www.adafruit.com/products/328)
+ 
+This application works great with cobblr-phone(http://github.com/TheQYD/cobblr-phone). If you'd like to make a cellphone that uses Cobblr, you can follow the directions [here](https://learn.adafruit.com/piphone-a-raspberry-pi-based-cellphone/pi-setup?view=all) to wire it up.
 
+# How to Install
 
+Follow the directions to install the [Cobblr framework](http://github.com/TheQYD/cobblr). The PiTFT should be configured in portrait mode (no rotation). Once that's finished, and the framework is installed, execute this command:
+```
+sudo cobblr install cobblr-calculator
+```
+
+# More
+
+Though not required, I've made a polycarbonate and aluminum body for it. The CADs are avaliable [here](https://github.com/TheQYD/CAD/tree/master/cobblr-phone). Other applications were made to work with the cobblr-music:
+
+- [cobblr-phone](http://gihub.com/TheQYD/cobblr-phone)
+- [cobblr-calculator](http://gihub.com/TheQYD/cobblr-music)
+
+# License
+Cobblr Calculator is available under the MIT license. See the LICENSE file for more info. Make it better!
